@@ -210,9 +210,9 @@
 
 
 var startDate = new Date();
-var foo = turbojs.alloc(10000000);
+var foo = turbojs.alloc(20000000);
 
-for (var i = 0; i < 10000000; i++)
+for (var i = 0; i < 20000000; i++)
 {
 	foo.data[i] = Math.pow(i,i);
 }
@@ -223,7 +223,7 @@ document.getElementById("cpu").textContent="GPU --> "+seconds;
 startDate = new Date();
 foo = [];
 
-for (var i = 0; i < 10000000; i++)
+for (var i = 0; i < 20000000; i++)
 {
 	foo.push(Math.pow(i,i));
 }
